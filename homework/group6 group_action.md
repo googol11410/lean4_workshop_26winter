@@ -10,7 +10,7 @@ The following "core" modules form a linear chain of imports.
 *   `Mathlib.GroupTheory.GroupAction.Basic`: Geometric and algebraic structures arising from actions (Orbits, Stabilizers, Fixed Points).
 *   `Mathlib.GroupTheory.GroupAction.Quotient`: Advanced theorems relating orbits to quotient groups, including the Orbit-Stabilizer theorem and Burnside's Lemma.
 
-> **Note:** The library uses the `Additive.toMul` attribute extensively. Theorems proved for multiplicative actions (`•`) are automatically translated to additive actions (`+ᵥ`), saving significant code duplication.
+> **Note:** The library uses the `to_additive` attribute extensively. Theorems proved for multiplicative actions (`•`) are automatically translated to additive actions (`+ᵥ`), saving significant code duplication.
 
 ## 3. Main Definitions and Structures
 
@@ -137,4 +137,4 @@ theorem MulAction.IwasawaStructure.isSimpleGroup
 IsSimpleGroup M
 ```
 
-The Iwasawa criterion for simplicity
+The Iwasawa criterion for simplicity.
